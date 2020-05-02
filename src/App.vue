@@ -9,15 +9,15 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <router-link  class="nav-link" to="/chat">Chat</router-link> <span class="sr-only">(current)</span>
+        <router-link  class="nav-link" to="/">Chat</router-link> <span class="sr-only">(current)</span>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link"  to="/">Contador</router-link>
+        <router-link class="nav-link"  to="/contador">Contador</router-link>
       </li>
 
     </ul>
     <span class="navbar-text">
-      Navbar text with an inline element
+      Procura lavarte bien las manos y contar con los implementos de proteccion
     </span>
   </div>
 </nav>

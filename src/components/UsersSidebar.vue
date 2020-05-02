@@ -15,6 +15,8 @@
                 Ningun usuario Conectado
             </p>
         </div>
+        <br>
+        <a href="/" class="btn btn-block btn-danger" > Salir</a>
     </div>
 
 </template>

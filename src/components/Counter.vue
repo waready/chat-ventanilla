@@ -3,7 +3,7 @@
         <div class="col-md-8 offset-md-2 card">
             <div class="card-block">
                 <h3 class="text-center">
-                    vuejs2, vuex y socket.io (Contador)
+                    Prueva servidor (Contador)
                 </h3>
 
                 <hr/>

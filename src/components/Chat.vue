@@ -7,10 +7,14 @@
                     Bienvenido {{username}}!
                 </h3>
                 <div class="col card">
-                    <textarea class="form-control" v-model="message"></textarea>
-                    <br/>
-                    <button class="btn btn-block btn-info" @click="sendMessage">Enviar mensaje</button>
+                    <form v-on:submit.prevent="sendMessage" v-on:keyup.enter="sendMessage">
+                        <textarea class="form-control" v-model="message" required></textarea>
+                        <br/>
+                        <button class="btn btn-block btn-success"  type="submit">Enviar mensaje</button>
 
+                    </form>
+            
+                    <br>
                     <div class="col-md-12">
                         <ul>
                             <li v-for="msg in chat">
@@ -49,6 +53,7 @@ export default {
     data(){
         return{
             message:'',
+            disable:false
         }
     },
     methods:{
@@ -59,6 +64,7 @@ export default {
         },
         sendMessage(){
             this.socket_new_message(this.message);
+            this.message = "";
         }
     },
     computed:{
