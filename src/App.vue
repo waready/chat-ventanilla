@@ -24,7 +24,7 @@
     
     </header>
     <div class="container" id="app">
-       <img src="./assets/logo.png">
+       <img src="https://waready.github.io/chat-ventanilla/static/img/logo.8982791.png">
         <router-view/>
     </div>
   </div>
