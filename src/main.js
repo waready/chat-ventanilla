@@ -32,7 +32,7 @@ const store = new Vuex.Store({
 
 Vue.use(new VueSocketIO({
   debug: true,
-  connection: 'http://localhost:5000', //options object is Optional
+  connection: 'http://152.44.38.16/', //options object is Optional
   vuex: {
     store,
     actionPrefix: "SOCKET_",
